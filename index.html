@@ -17,6 +17,23 @@
 
 <body>
 
+  <!-- ===== STICKY NAVBAR ===== -->
+  <nav class="sticky-nav" id="stickyNav">
+    <div class="nav-inner">
+      <span class="nav-brand">Helena <span class="nav-brand-role">· QA</span></span>
+      <div class="nav-links" id="navLinks">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#focus" class="nav-link">Focus Areas</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
   <!-- Cover Banner -->
   <div class="cover-banner">
     <img src="cover.png" alt="Cover" class="cover-img" />
@@ -142,7 +159,7 @@
           <strong class="about-name">Helena Yuniarta Simarmata</strong>
           <span class="about-role">Software Quality Assurance</span>
           <div class="about-card-meta">
-            <span>📍 Jakarta, Indonesia</span>
+            <span>📍 Jakarta Barat, Jakarta</span>
           </div>
           <div class="about-card-rows">
             <div class="about-card-row">
@@ -166,13 +183,23 @@
                 <span class="about-card-val">Data &amp; Automation Enthusiast</span>
               </div>
             </div>
+            <div class="about-card-row">
+              <span class="about-card-icon">🎓</span>
+              <div>
+                <span class="about-card-label">Education</span>
+                <span class="about-card-val">S1 Informatics Engineering</span>
+                <span class="about-card-sub">Institut Teknologi Sumatera · 3.01/4.00</span>
+                <span class="about-card-sub">Aug 2019 – Nov 2023 · Lampung</span>
+                <span class="about-card-sub">TOEFL Score: 500</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
     <!-- ===== SKILLS & TECH STACK ===== -->
-    <div class="section-header-notion" id="skills">
+    <div class="section-header-notion" id="skills" style="scroll-margin-top: 60px;">
       <h3 class="section-h3">Skills &amp; Tech Stack</h3>
       <hr class="notion-divider" />
     </div>
@@ -278,15 +305,13 @@
       <div class="skill-block">
         <h5 class="skill-block-title">📁 Soft Skills</h5>
         <div class="soft-skill-grid">
-          <span class="soft-skill">🎯 Precision</span>
-          <span class="soft-skill">🗣️ Communication</span>
-          <span class="soft-skill">💡 Assertiveness</span>
-          <span class="soft-skill">🧘 Patience</span>
-          <span class="soft-skill">🤝 Empathy</span>
-          <span class="soft-skill">⏱️ Time Management</span>
-          <span class="soft-skill">🧠 Problem Solving</span>
-          <span class="soft-skill">🤝 Team Collaboration</span>
-          <span class="soft-skill">🎯 Attention to Detail</span>
+          <span class="soft-skill">Communication</span>
+          <span class="soft-skill">Patience</span>
+          <span class="soft-skill">Empathy</span>
+          <span class="soft-skill">Time Management</span>
+          <span class="soft-skill">Problem Solving</span>
+          <span class="soft-skill">Team Collaboration</span>
+          <span class="soft-skill">Attention to Detail</span>
         </div>
       </div>
 
@@ -432,7 +457,7 @@
     </div>
 
     <!-- ===== FOCUS AREAS & HIGHLIGHTS ===== -->
-    <div class="section-header-notion">
+    <div class="section-header-notion" id="focus" style="scroll-margin-top: 60px;">
       <h3 class="section-h3">Focus Areas &amp; Highlights</h3>
       <hr class="notion-divider" />
     </div>
