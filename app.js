@@ -95,18 +95,45 @@ function revealOnScroll() {
 window.addEventListener('scroll', revealOnScroll);
 revealOnScroll();
 
-// ---- CONTACT FORM ----
-function handleSubmit(e) {
+// ---- CONTACT FORM (Formspree) ----
+async function handleSubmit(e) {
     e.preventDefault();
     const btn = document.getElementById('submitBtn');
     const msg = document.getElementById('formMsg');
+    const form = e.target;
+    const formId = document.getElementById('formspreeId').value;
+
+    if (formId === 'YOUR_FORMSPREE_ID') {
+        msg.textContent = '⚠️ Form belum dikonfigurasi. Hubungi via Email atau WhatsApp ya!';
+        msg.style.color = '#e53935';
+        return;
+    }
+
     btn.disabled = true;
     btn.textContent = 'Sending…';
-    setTimeout(() => {
-        btn.textContent = 'Send Message';
+    msg.textContent = '';
+
+    try {
+        const response = await fetch(`https://formspree.io/f/${formId}`, {
+            method: 'POST',
+            body: new FormData(form),
+            headers: { 'Accept': 'application/json' }
+        });
+
+        if (response.ok) {
+            msg.textContent = '✅ Message sent! I will get back to you soon.';
+            msg.style.color = '#0f9d58';
+            form.reset();
+        } else {
+            msg.textContent = '❌ Failed to send. Please email: simarmatahelena14@gmail.com';
+            msg.style.color = '#e53935';
+        }
+    } catch {
+        msg.textContent = '❌ Network error. Please email: simarmatahelena14@gmail.com';
+        msg.style.color = '#e53935';
+    } finally {
         btn.disabled = false;
-        msg.textContent = '✅ Message sent! I will get back to you soon.';
-        e.target.reset();
-        setTimeout(() => { msg.textContent = ''; }, 5000);
-    }, 1200);
+        btn.textContent = 'Send Message';
+        setTimeout(() => { msg.textContent = ''; }, 6000);
+    }
 }
