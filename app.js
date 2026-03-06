@@ -2,6 +2,42 @@
    APP.JS — Helena Portfolio
    =========================== */
 
+// ---- HAMBURGER MENU ----
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('navLinks');
+
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('open');
+    navLinks.classList.toggle('open');
+});
+
+// Close nav when a link is clicked (mobile)
+navLinks.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+        hamburger.classList.remove('open');
+        navLinks.classList.remove('open');
+    });
+});
+
+// ---- ACTIVE NAV LINK ON SCROLL ----
+const sections = document.querySelectorAll('[id]');
+const allNavLinks = document.querySelectorAll('.nav-link');
+
+function updateActiveLink() {
+    let current = '';
+    sections.forEach(section => {
+        const top = section.getBoundingClientRect().top;
+        if (top <= 80) current = section.id;
+    });
+    allNavLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === '#' + current) {
+            link.classList.add('active');
+        }
+    });
+}
+window.addEventListener('scroll', updateActiveLink);
+
 // ---- TYPEWRITER ----
 const phrases = [
     'End-to-End Testing',
@@ -30,7 +66,7 @@ function typeWrite() {
     let speed = isDeleting ? 50 : 80;
 
     if (!isDeleting && charIndex === current.length) {
-        speed = 2000; // pause at end
+        speed = 2000;
         isDeleting = true;
     } else if (isDeleting && charIndex === 0) {
         isDeleting = false;
