@@ -1,762 +1,546 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Helena Yuniarta Simarmata — Quality Assurance</title>
   <meta name="description"
-    content="Portofolio Helena Yuniarta Simarmata — Quality Assurance intern booking systems and data-driven testing." />
+    content="Portfolio of Helena Yuniarta Simarmata — QA Specialist with hands-on experience in flight booking systems, payment validation, and OTA price monitoring." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300;0,14..32,400;0,14..32,500;0,14..32,600;0,14..32,700;0,14..32,800;1,14..32,400&family=JetBrains+Mono:wght@400;500;600&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
-  <!-- Navigation -->
-  <nav class="navbar" id="navbar">
-    <div class="nav-container">
-      <a href="#hero" class="nav-logo">
-        <div style="display: flex; flex-direction: column;">
-          <span style="line-height: 1.1;">Helena</span>
-          <span
-            style="font-size: 0.6rem; color: var(--accent-cyan); font-weight: 600; font-family: var(--font-sans); letter-spacing: 0.08em; text-transform: uppercase; margin-top: 2px;">Quality
-            Assurance</span>
-        </div>
-      </a>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#skills" class="nav-link">Skills</a></li>
-        <li><a href="#experience" class="nav-link">Experience</a></li>
-        <li><a href="#projects" class="nav-link">Focus Areas</a></li>
-        <li><a href="#contact" class="nav-cta">Let's Collaborate</a></li>
-      </ul>
-      <button class="hamburger" id="hamburger" aria-label="Menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </nav>
+  <!-- Cover Banner -->
+  <div class="cover-banner">
+    <img src="cover.png" alt="Cover" class="cover-img" />
+  </div>
 
-  <!-- Hero Section -->
-  <section class="hero" id="hero">
-    <div class="hero-bg">
-      <div class="grid-overlay"></div>
-      <div class="glow glow-1"></div>
-      <div class="glow glow-2"></div>
-      <div class="glow glow-3"></div>
-    </div>
-    <div class="hero-wrapper">
-      <div class="hero-content">
-        <div class="hero-badge">
-          <span class="badge-dot"></span>
-          Data & Automation Enthusiast
-        </div>
-        <h1 class="hero-title">
-          Hi, I am <span class="text-gradient">Helena</span> 👋
-        </h1>
-        <p class="hero-subtitle">
-          <span id="typewriter"></span><span class="cursor">|</span>
-        </p>
-        <p class="hero-desc">
-          <strong>Quality Assurance</strong> with hands-on experience in end-to-end flight booking systems, payment
-          validation, and OTA price monitoring. Strong background in backend validation using <strong>SQL
-            (BigQuery)</strong> and data-driven QA processes.
-        </p>
-        <div class="hero-cta">
-          <a href="#experience" class="btn btn-primary" id="hero-cta-exp">
-            <span>View Experience</span>
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M5 12h14M12 5l7 7-7 7" />
-            </svg>
-          </a>
-          <a href="#contact" class="btn btn-secondary" id="hero-cta-contact">Contact Me</a>
-        </div>
-        <div class="hero-stats">
-          <div class="stat-item">
-            <span class="stat-number">BA</span>
-            <span class="stat-label">System QA</span>
-          </div>
-          <div class="stat-divider"></div>
-          <div class="stat-item">
-            <span class="stat-number">OTA</span>
-            <span class="stat-label">Price Checking</span>
-          </div>
-          <div class="stat-divider"></div>
-          <div class="stat-item">
-            <span class="stat-number">DB</span>
-            <span class="stat-label">SQL BigQuery</span>
-          </div>
-          <div class="stat-divider"></div>
-          <div class="stat-item">
-            <span class="stat-number">GCP</span>
-            <span class="stat-label">Cloud & Cron</span>
-          </div>
-        </div>
+  <!-- Page Wrapper -->
+  <div class="page-wrapper">
+
+    <!-- ===== PAGE HEADER / HERO ===== -->
+    <div class="page-header">
+      <div class="page-icon">
+        <img src="profile.jpeg" alt="Helena" class="avatar-img" />
       </div>
 
-      <div class="hero-visual">
-        <div class="code-window">
-          <div class="window-header">
-            <div class="window-dots">
-              <span class="dot dot-red"></span>
-              <span class="dot dot-yellow"></span>
-              <span class="dot dot-green"></span>
-            </div>
-            <span class="window-title">profile.json</span>
-          </div>
-          <div class="window-body">
-            <pre class="code-block"><code>{
-  <span class="code-key">"name"</span>: <span class="code-string">"Helena Yuniarta Simarmata"</span>,
-  <span class="code-key">"role"</span>: <span class="code-string">"Quality Assurance"</span>,
-  <span class="code-key">"focus"</span>: <span class="code-string">"Booking & Payment System"</span>,
-  <span class="code-key">"skills"</span>: [
-    <span class="code-string">"End-to-End Testing"</span>,
-    <span class="code-string">"Payment Validation"</span>,
-    <span class="code-string">"SQL (BigQuery)"</span>,
-    <span class="code-string">"Pricing Investigation"</span>,
-    <span class="code-string">"Cron Scheduling"</span>
+      <h1 class="page-title">Hi, I am Helena 👋</h1>
+      <h2 class="page-subtitle">
+        Quality Assurance · <span id="typewriter" class="typewriter-text"></span><span class="cursor">|</span>
+      </h2>
+
+      <p class="hero-desc">
+        Quality Assurance with hands-on experience in end-to-end flight booking systems, payment validation, and OTA
+        price monitoring.
+        Strong background in backend validation using SQL (BigQuery) and data-driven QA processes.
+      </p>
+
+      <!-- CTA Buttons -->
+      <div class="hero-actions">
+        <a href="#experience" class="btn btn-primary">View Experience</a>
+        <a href="#contact" class="btn btn-outline">Contact Me</a>
+      </div>
+
+      <!-- Quick Badges -->
+      <div class="hero-badges">
+        <span class="hero-badge"><span class="badge-abbr">BA</span> System QA</span>
+        <span class="hero-badge"><span class="badge-abbr">OTA</span> Price Checking</span>
+        <span class="hero-badge"><span class="badge-abbr">DB</span> SQL BigQuery</span>
+        <span class="hero-badge"><span class="badge-abbr">GCP</span> Cloud &amp; Cron</span>
+      </div>
+    </div>
+
+    <!-- Hero 2-col: JSON card + photo -->
+    <div class="hero-split">
+      <!-- JSON Card -->
+      <div class="json-card">
+        <div class="json-card-header">
+          <span class="json-dot red"></span>
+          <span class="json-dot yellow"></span>
+          <span class="json-dot green"></span>
+          <span class="json-filename">profile.json</span>
+        </div>
+        <pre class="json-body">{
+  <span class="json-key">"name"</span>: <span class="json-str">"Helena Yuniarta Simarmata"</span>,
+  <span class="json-key">"role"</span>: <span class="json-str">"Quality Assurance"</span>,
+  <span class="json-key">"focus"</span>: <span class="json-str">"Booking &amp; Payment System"</span>,
+  <span class="json-key">"skills"</span>: [
+    <span class="json-str">"End-to-End Testing"</span>,
+    <span class="json-str">"Payment Validation"</span>,
+    <span class="json-str">"SQL (BigQuery)"</span>,
+    <span class="json-str">"Pricing Investigation"</span>,
+    <span class="json-str">"Cron Scheduling"</span>
   ],
-  <span class="code-key">"status"</span>: <span class="code-green">"Open to Opportunities ✅"</span>
-}</code></pre>
-          </div>
-        </div>
+  <span class="json-key">"status"</span>: <span class="json-str">"Open to Opportunities ✅"</span>
+}</pre>
+      </div>
 
-        <!-- Floating badges -->
-        <div class="float-badge float-badge-1">
-          <span>✈️</span> Flight Booking
-        </div>
-        <div class="float-badge float-badge-2">
-          <span>�</span> Payment QA
-        </div>
-        <div class="float-badge float-badge-3">
-          <span>📊</span> BigQuery & SQL
+      <!-- Hero Right Col -->
+      <div class="hero-right">
+        <img src="profile.jpeg" alt="Helena Yuniarta Simarmata" class="hero-photo" />
+        <div class="hero-icon-row">
+          <div class="hero-icon-item">
+            <span class="hero-icon-emoji">✈️</span>
+            <span class="hero-icon-label">Flight Booking</span>
+          </div>
+          <div class="hero-icon-item">
+            <span class="hero-icon-emoji">💳</span>
+            <span class="hero-icon-label">Payment QA</span>
+          </div>
+          <div class="hero-icon-item">
+            <span class="hero-icon-emoji">📊</span>
+            <span class="hero-icon-label">BigQuery &amp; SQL</span>
+          </div>
         </div>
       </div>
     </div>
 
+    <!-- ===== ABOUT ME ===== -->
+    <div class="section-header-notion" id="about">
+      <h3 class="section-h3">About Me</h3>
+      <hr class="notion-divider" />
+    </div>
 
-  </section>
+    <div class="about-layout">
+      <!-- About Text -->
+      <div class="about-text-col">
+        <p class="about-para">
+          I am a <strong>Quality Assurance</strong> with hands-on experience in end-to-end flight booking systems,
+          payment validation, loyalty logic testing, add-ons revenue validation, and OTA price monitoring.
+        </p>
+        <p class="about-para">
+          I have a strong background in system documentation, requirement analysis, and backend validation using
+          <strong>SQL (BigQuery)</strong>.
+        </p>
+        <p class="about-para">
+          I am highly passionate about <strong>pricing investigation</strong>, backend vs UI reconciliation, and
+          implementing data-driven QA processes to ensure the highest quality of software products.
+        </p>
 
-  <!-- About Section -->
-  <section class="section" id="about">
-    <div class="container">
-      <div class="section-header">
-        <h2 class="section-title">About Me</h2>
-      </div>
-      <div class="about-grid">
-        <div class="about-text">
-          <p>
-            I am a <strong>Quality Assurance</strong> with hands-on experience in <strong>end-to-end flight
-              booking systems</strong>, payment validation, loyalty logic testing, add-ons revenue validation, and OTA
-            price monitoring.
-          </p>
-          <p>
-            I have a strong background in <strong>system documentation</strong>, requirement analysis, and backend
-            validation using <strong>SQL (BigQuery)</strong>.
-          </p>
-          <p>
-            I am highly passionate about <strong>pricing investigation</strong>, backend vs UI reconciliation, and
-            implementing <strong>data-driven QA processes</strong> to ensure the highest quality of software products.
-          </p>
-          <div class="about-tags">
-            <span class="tag">Quality Assurance</span>
-            <span class="tag">Testing Manual</span>
-            <span class="tag">Booking Systems</span>
-            <span class="tag">Payment Validation</span>
-            <span class="tag">SQL / BigQuery</span>
-            <span class="tag">System Documentation</span>
-            <span class="tag">Data-Driven QA</span>
-          </div>
+        <div class="tag-row flexible" style="margin-top: 20px;">
+          <span class="notion-tag">Quality Assurance</span>
+          <span class="notion-tag">Testing Manual</span>
+          <span class="notion-tag">Booking Systems</span>
+          <span class="notion-tag">Payment Validation</span>
+          <span class="notion-tag">SQL / BigQuery</span>
+          <span class="notion-tag">System Documentation</span>
+          <span class="notion-tag">Data-Driven QA</span>
         </div>
+      </div>
 
-        <div class="about-card-stack">
-          <div class="profile-card">
-            <div class="profile-avatar">
-              <div class="avatar-inner">
-                <img src="profile.jpeg" alt="Helena Yuniarta"
-                  style="width: 100%; height: 100%; border-radius: 50%; object-fit: cover;" />
-              </div>
-              <div class="avatar-status"></div>
-            </div>
-            <div class="profile-info">
-              <h3>Helena Yuniarta Simarmata</h3>
-              <p>Software Quality Assurance</p>
-              <div class="profile-location">
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-                  <circle cx="12" cy="10" r="3" />
-                </svg>
-                Jakarta, Indonesia
-              </div>
-            </div>
+      <!-- About Card -->
+      <div class="about-card">
+        <img src="profile.jpeg" alt="Helena Yuniarta" class="about-photo" />
+        <div class="about-card-info">
+          <strong class="about-name">Helena Yuniarta Simarmata</strong>
+          <span class="about-role">Software Quality Assurance</span>
+          <div class="about-card-meta">
+            <span>📍 Jakarta, Indonesia</span>
           </div>
-
-          <div class="info-cards">
-            <div class="info-card">
-              <div class="info-icon">�</div>
+          <div class="about-card-rows">
+            <div class="about-card-row">
+              <span class="about-card-icon">💼</span>
               <div>
-                <div class="info-title">Current Role</div>
-                <div class="info-value">Software Quality Assurance</div>
+                <span class="about-card-label">Current Role</span>
+                <span class="about-card-val">Software Quality Assurance</span>
               </div>
             </div>
-            <div class="info-card">
-              <div class="info-icon">�</div>
+            <div class="about-card-row">
+              <span class="about-card-icon">🎯</span>
               <div>
-                <div class="info-title">Focus</div>
-                <div class="info-value">Software Quality Assurance</div>
+                <span class="about-card-label">Focus</span>
+                <span class="about-card-val">Software Quality Assurance</span>
               </div>
             </div>
-            <div class="info-card">
-              <div class="info-icon">📊</div>
+            <div class="about-card-row">
+              <span class="about-card-icon">📊</span>
               <div>
-                <div class="info-title">Key Expertise</div>
-                <div class="info-value">Data & Automation Enthusiast</div>
+                <span class="about-card-label">Key Expertise</span>
+                <span class="about-card-val">Data &amp; Automation Enthusiast</span>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
 
-  <!-- Skills Section -->
-  <section class="section section-dark" id="skills">
-    <div class="container">
-      <div class="section-header">
-        <h2 class="section-title">Skills & Tech Stack</h2>
+    <!-- ===== SKILLS & TECH STACK ===== -->
+    <div class="section-header-notion" id="skills">
+      <h3 class="section-h3">Skills &amp; Tech Stack</h3>
+      <hr class="notion-divider" />
+    </div>
+
+    <!-- Skills Grid -->
+    <div class="skills-grid">
+
+      <!-- Testing & QA -->
+      <div class="skill-block">
+        <h5 class="skill-block-title">🧪 Testing &amp; QA</h5>
+        <div class="skill-list">
+          <div class="skill-row"><span class="skill-name">End-to-End Booking Flow</span><span
+              class="skill-level advanced">Advanced</span></div>
+          <div class="skill-row"><span class="skill-name">Functional &amp; Regression</span><span
+              class="skill-level advanced">Advanced</span></div>
+          <div class="skill-row"><span class="skill-name">Integration Testing</span><span
+              class="skill-level advanced">Advanced</span></div>
+          <div class="skill-row"><span class="skill-name">OTA Price Monitoring</span><span
+              class="skill-level advanced">Advanced</span></div>
+        </div>
       </div>
 
-      <div class="skills-grid">
-        <div class="skill-category">
-          <h3 class="skill-cat-title">
-            <span class="skill-icon">🧪</span> Testing & QA
-          </h3>
-          <div class="skill-list">
-            <div class="skill-item">
-              <div class="skill-header"><span>End-to-End Booking Flow</span><span class="skill-level">Advanced</span>
-              </div>
-              <div class="skill-bar">
-                <div class="skill-fill" style="width:90%"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-header"><span>Functional & Regression</span><span class="skill-level">Advanced</span>
-              </div>
-              <div class="skill-bar">
-                <div class="skill-fill" style="width:85%"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-header"><span>Integration Testing</span><span class="skill-level">Advanced</span></div>
-              <div class="skill-bar">
-                <div class="skill-fill" style="width:80%"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-header"><span>OTA Price Monitoring</span><span class="skill-level">Advanced</span></div>
-              <div class="skill-bar">
-                <div class="skill-fill" style="width:85%"></div>
-              </div>
-            </div>
-          </div>
+      <!-- Data & Backend -->
+      <div class="skill-block">
+        <h5 class="skill-block-title">💾 Data &amp; Backend</h5>
+        <div class="skill-list">
+          <div class="skill-row"><span class="skill-name">SQL (BigQuery)</span><span
+              class="skill-level advanced">Advanced</span></div>
+          <div class="skill-row"><span class="skill-name">Database Validation</span><span
+              class="skill-level advanced">Advanced</span></div>
+          <div class="skill-row"><span class="skill-name">Backend vs UI Reconciliation</span><span
+              class="skill-level advanced">Advanced</span></div>
+          <div class="skill-row"><span class="skill-name">Data Analysis</span><span
+              class="skill-level intermediate">Intermediate</span></div>
         </div>
+      </div>
 
-        <div class="skill-category">
-          <h3 class="skill-cat-title">
-            <span class="skill-icon">�</span> Data & Backend
-          </h3>
-          <div class="skill-list">
-            <div class="skill-item">
-              <div class="skill-header"><span>SQL (BigQuery)</span><span class="skill-level">Advanced</span></div>
-              <div class="skill-bar">
-                <div class="skill-fill" style="width:88%"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-header"><span>Database Validation</span><span class="skill-level">Advanced</span></div>
-              <div class="skill-bar">
-                <div class="skill-fill" style="width:85%"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-header"><span>Backend vs UI Reconciliation</span><span
-                  class="skill-level">Advanced</span></div>
-              <div class="skill-bar">
-                <div class="skill-fill" style="width:82%"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-header"><span>Data Analysis</span><span class="skill-level">Intermediate</span></div>
-              <div class="skill-bar">
-                <div class="skill-fill" style="width:75%"></div>
-              </div>
-            </div>
-          </div>
+      <!-- Cloud & DevOps -->
+      <div class="skill-block">
+        <h5 class="skill-block-title">☁️ Cloud &amp; DevOps</h5>
+        <div class="skill-list">
+          <div class="skill-row"><span class="skill-name">Google Cloud VM</span><span
+              class="skill-level intermediate">Intermediate</span></div>
+          <div class="skill-row"><span class="skill-name">Cron Scheduling</span><span
+              class="skill-level intermediate">Intermediate</span></div>
+          <div class="skill-row"><span class="skill-name">SSH &amp; rsync</span><span
+              class="skill-level intermediate">Intermediate</span></div>
+          <div class="skill-row"><span class="skill-name">JMeter &amp; Katalon</span><span
+              class="skill-level intermediate">Intermediate</span></div>
         </div>
+      </div>
 
-        <div class="skill-category">
-          <h3 class="skill-cat-title">
-            <span class="skill-icon">☁️</span> Cloud & DevOps
-          </h3>
-          <div class="skill-list">
-            <div class="skill-item">
-              <div class="skill-header"><span>Google Cloud VM</span><span class="skill-level">Intermediate</span></div>
-              <div class="skill-bar">
-                <div class="skill-fill" style="width:75%"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-header"><span>Cron Scheduling</span><span class="skill-level">Intermediate</span></div>
-              <div class="skill-bar">
-                <div class="skill-fill" style="width:78%"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-header"><span>SSH & rsync</span><span class="skill-level">Intermediate</span></div>
-              <div class="skill-bar">
-                <div class="skill-fill" style="width:70%"></div>
-              </div>
-            </div>
+      <!-- Tools -->
+      <div class="skill-block">
+        <h5 class="skill-block-title">🔧 Tools</h5>
+        <div class="tool-list">
+          <div class="tool-item">
+            <strong>Azure DevOps</strong>
+            <span>Project management &amp; bug tracking</span>
           </div>
-        </div>
-
-        <div class="skill-category">
-          <h3 class="skill-cat-title">
-            <span class="skill-icon">🔧</span> Tools
-          </h3>
-          <div class="skill-list" style="gap: 14px;">
-            <div class="skill-item">
-              <div style="font-weight: 600; font-size: 0.88rem; color: var(--text-primary); margin-bottom: 2px;">Azure
-                DevOps</div>
-              <div style="font-size: 0.8rem; color: var(--text-secondary); line-height: 1.4;">Project management & bug
-                tracking</div>
-            </div>
-            <div class="skill-item">
-              <div style="font-weight: 600; font-size: 0.88rem; color: var(--text-primary); margin-bottom: 2px;">Teams
-              </div>
-              <div style="font-size: 0.8rem; color: var(--text-secondary); line-height: 1.4;">Communication within the
-                team</div>
-            </div>
-            <div class="skill-item">
-              <div style="font-weight: 600; font-size: 0.88rem; color: var(--text-primary); margin-bottom: 2px;">Chrome
-                Devtools</div>
-              <div style="font-size: 0.8rem; color: var(--text-secondary); line-height: 1.4;">Better testing & improving
-                bug reports</div>
-            </div>
-            <div class="skill-item">
-              <div style="font-weight: 600; font-size: 0.88rem; color: var(--text-primary); margin-bottom: 2px;">Postman
-              </div>
-              <div style="font-size: 0.8rem; color: var(--text-secondary); line-height: 1.4;">API testing</div>
-            </div>
-            <div class="skill-item">
-              <div style="font-weight: 600; font-size: 0.88rem; color: var(--text-primary); margin-bottom: 2px;">
-                Playwright</div>
-              <div style="font-size: 0.8rem; color: var(--text-secondary); line-height: 1.4;">Web testing and automation
-              </div>
-            </div>
-            <div class="skill-item">
-              <div style="font-weight: 600; font-size: 0.88rem; color: var(--text-primary); margin-bottom: 2px;">Visual
-                Studio Code</div>
-              <div style="font-size: 0.8rem; color: var(--text-secondary); line-height: 1.4;">Practicing HTML and CSS
-              </div>
-            </div>
-            <div class="skill-item">
-              <div style="font-weight: 600; font-size: 0.88rem; color: var(--text-primary); margin-bottom: 2px;">JMeter
-                & Katalon</div>
-              <div style="font-size: 0.8rem; color: var(--text-secondary); line-height: 1.4;">Intermediate</div>
-            </div>
-            <div class="skill-item">
-              <div style="font-weight: 600; font-size: 0.88rem; color: var(--text-primary); margin-bottom: 2px;">Figma &
-                Draw.io</div>
-              <div style="font-size: 0.8rem; color: var(--text-secondary); line-height: 1.4;">Advanced</div>
-            </div>
-            <div class="skill-item">
-              <div style="font-weight: 600; font-size: 0.88rem; color: var(--text-primary); margin-bottom: 2px;">
-                Microsoft Office</div>
-              <div style="font-size: 0.8rem; color: var(--text-secondary); line-height: 1.4;">Advanced</div>
-            </div>
+          <div class="tool-item">
+            <strong>Postman</strong>
+            <span>API testing</span>
+          </div>
+          <div class="tool-item">
+            <strong>Playwright</strong>
+            <span>Web testing and automation</span>
+          </div>
+          <div class="tool-item">
+            <strong>Chrome DevTools</strong>
+            <span>Better testing &amp; improving bug reports</span>
+          </div>
+          <div class="tool-item">
+            <strong>Figma &amp; Draw.io</strong>
+            <span>Advanced</span>
+          </div>
+          <div class="tool-item">
+            <strong>Microsoft Office</strong>
+            <span>Advanced</span>
           </div>
         </div>
       </div>
 
       <!-- Tech Skills -->
-      <div class="soft-skills-section" style="margin-bottom: 48px;">
-        <h3 class="soft-skills-title"><span class="skill-icon">�</span> Tech Skills</h3>
-        <div class="tech-badges">
-          <div class="badge-item">Rest API testing</div>
-          <div class="badge-item">Foundation Level knowledge</div>
-          <div class="badge-item">SDLC Models (Waterfall, V-Model, Agile)</div>
-          <div class="badge-item">Software testing</div>
-          <div class="badge-item">Creating test cases</div>
-          <div class="badge-item">Reporting bugs</div>
-          <div class="badge-item">Creating bug reports</div>
-          <div class="badge-item">Basic Python</div>
-          <div class="badge-item">Basic HTML and CSS</div>
-          <div class="badge-item">Creating documentation</div>
-          <div class="badge-item">Applications</div>
-          <div class="badge-item">Performing smoke tests</div>
-          <div class="badge-item">UAT testing</div>
-          <div class="badge-item">Agile workflow</div>
+      <div class="skill-block">
+        <h5 class="skill-block-title">⚡ Tech Skills</h5>
+        <div class="tag-row flexible">
+          <span class="notion-tag">REST API Testing</span>
+          <span class="notion-tag">SDLC (Waterfall, V-Model, Agile)</span>
+          <span class="notion-tag">Software Testing</span>
+          <span class="notion-tag">Test Case Design</span>
+          <span class="notion-tag">Bug Reporting</span>
+          <span class="notion-tag">UAT Testing</span>
+          <span class="notion-tag">Smoke Testing</span>
+          <span class="notion-tag">Agile Workflow</span>
+          <span class="notion-tag">Basic Python</span>
+          <span class="notion-tag">Basic HTML &amp; CSS</span>
+          <span class="notion-tag">System Documentation</span>
         </div>
       </div>
 
-      <!-- Soft Skills Pills -->
-      <div class="soft-skills-section">
-        <h3 class="soft-skills-title"><span class="skill-icon">📁</span> Soft Skills</h3>
-        <div class="soft-skills-grid" style="grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));">
-          <div class="soft-skill-card">
-            <div class="ss-icon">🎯</div>
-            <div class="ss-label">Precision</div>
-          </div>
-          <div class="soft-skill-card">
-            <div class="ss-icon">🗣️</div>
-            <div class="ss-label">Communication</div>
-          </div>
-          <div class="soft-skill-card">
-            <div class="ss-icon">💡</div>
-            <div class="ss-label">Assertiveness</div>
-          </div>
-          <div class="soft-skill-card">
-            <div class="ss-icon">🧘</div>
-            <div class="ss-label">Patience</div>
-          </div>
-          <div class="soft-skill-card">
-            <div class="ss-icon">🤝</div>
-            <div class="ss-label">Empathy</div>
-          </div>
-          <div class="soft-skill-card">
-            <div class="ss-icon">⏱️</div>
-            <div class="ss-label">Time Management</div>
-          </div>
-          <div class="soft-skill-card">
-            <div class="ss-icon">🧠</div>
-            <div class="ss-label">Problem Solving</div>
-          </div>
-          <div class="soft-skill-card">
-            <div class="ss-icon">🤝</div>
-            <div class="ss-label">Team Collaboration</div>
-          </div>
-          <div class="soft-skill-card">
-            <div class="ss-icon">🎯</div>
-            <div class="ss-label">Attention to Detail</div>
-          </div>
+      <!-- Soft Skills -->
+      <div class="skill-block">
+        <h5 class="skill-block-title">📁 Soft Skills</h5>
+        <div class="soft-skill-grid">
+          <span class="soft-skill">🎯 Precision</span>
+          <span class="soft-skill">🗣️ Communication</span>
+          <span class="soft-skill">💡 Assertiveness</span>
+          <span class="soft-skill">🧘 Patience</span>
+          <span class="soft-skill">🤝 Empathy</span>
+          <span class="soft-skill">⏱️ Time Management</span>
+          <span class="soft-skill">🧠 Problem Solving</span>
+          <span class="soft-skill">🤝 Team Collaboration</span>
+          <span class="soft-skill">🎯 Attention to Detail</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ===== EXPERIENCE ===== -->
+    <div class="section-header-notion" id="experience">
+      <h3 class="section-h3">Experience</h3>
+      <hr class="notion-divider" />
+    </div>
+
+    <!-- Experience 1: Lion Group -->
+    <div class="exp-block featured-exp">
+      <div class="exp-block-header">
+        <div class="exp-badge current">⚡ Current Role</div>
+        <h4 class="exp-title">Contract Software Quality Assurance</h4>
+        <div class="exp-company">Lion Group (BookCabin)</div>
+        <div class="exp-meta">
+          <span>📍 Menteng, Jakarta Pusat</span>
+          <span class="exp-date">Oct 2024 – Present</span>
+        </div>
+      </div>
+
+      <div class="exp-body">
+        <h6 class="exp-section-label">Core Projects &amp; Responsibilities</h6>
+        <ul class="notion-list">
+          <li><strong>Home Page Revamp</strong> (Check-in, Profile, Cabin Club) – UI validation &amp; regression
+            testing.</li>
+          <li><strong>Payment Revamp</strong> – Multipax pricing validation, session expiry, EMD insurance validation.
+          </li>
+          <li><strong>Check-in Revamp</strong> – PNR validation, boarding pass display, booking synchronization.</li>
+          <li><strong>Booking List &amp; Detail</strong> – Status validation, cancel notes DB check, fare breakdown
+            accuracy.</li>
+          <li><strong>Undian (Semboor)</strong> – User &amp; Admin dashboard validation including duplicate prevention.
+          </li>
+          <li><strong>Tukar Point &amp; Earn Cabin Point</strong> – Loyalty logic validation &amp; backend
+            reconciliation.</li>
+          <li><strong>Pre Book Meals &amp; Add-ons</strong> (Meals, Insurance, Merchandise) – Revenue feature validation
+            &amp; total recalculation testing.</li>
+          <li><strong>Price Monitoring &amp; OTA Comparison</strong> – Route-based price comparison, tax validation,
+            anomaly detection.</li>
+        </ul>
+
+        <h6 class="exp-section-label" style="margin-top: 16px;">Data &amp; Automation Experience</h6>
+        <ul class="notion-list">
+          <li>SQL analysis using BigQuery (timestamp filtering, aggregation, platform comparison).</li>
+          <li>Backend vs UI price reconciliation.</li>
+          <li>Monitoring OTA scraper data per hour.</li>
+          <li>Google Cloud VM setup &amp; cron scheduling (UTC conversion).</li>
+          <li>SSH, rsync deployment &amp; API server health check.</li>
+        </ul>
+
+        <h6 class="exp-section-label" style="margin-top: 16px;">Technical Skills</h6>
+        <ul class="notion-list">
+          <li>Functional, Regression &amp; Integration Testing.</li>
+          <li>End-to-End Booking Flow Testing.</li>
+          <li>SQL (BigQuery), Google Cloud VM, SSH, SCP, Cron.</li>
+          <li>Android and iOS testing environment.</li>
+        </ul>
+
+        <div class="tag-row flexible" style="margin-top: 16px;">
+          <span class="notion-tag">E2E Testing</span>
+          <span class="notion-tag">SQL</span>
+          <span class="notion-tag">BigQuery</span>
+          <span class="notion-tag">GCP</span>
+          <span class="notion-tag">Pricing Investigation</span>
         </div>
       </div>
     </div>
-  </section>
 
-  <!-- Experience Section -->
-  <section class="section" id="experience">
-    <div class="container">
-      <div class="section-header">
-        <h2 class="section-title">Experience</h2>
+    <hr class="notion-divider" />
+
+    <!-- Experience 2: Troben -->
+    <div class="exp-row">
+      <div class="exp-date-col">
+        <strong>Troben</strong>
+        <span class="exp-date-text">Jul 2024 – Oct 2024</span>
+        <span class="exp-date-sub">📍 Jakarta Timur</span>
       </div>
-      <div class="timeline">
-
-        <!-- Lion Group (BookCabin) -->
-        <div class="timeline-item">
-          <div class="timeline-dot active-dot"></div>
-          <div class="timeline-content timeline-content-featured">
-            <div class="timeline-featured-banner">
-              <span class="featured-badge">⚡ Current Role</span>
-            </div>
-            <div class="timeline-header">
-              <div>
-                <h3 class="timeline-role">Contract Software Quality Assurance</h3>
-                <p class="timeline-company">
-                  <span class="company-name">Lion Group (BookCabin)</span>
-                </p>
-                <p class="timeline-location">📍 Menteng, Jakarta Pusat</p>
-              </div>
-              <span class="timeline-period active-period">Oct 2024 – Present</span>
-            </div>
-            <h4
-              style="margin: 1rem 0 0.5rem; color: var(--accent-cyan); font-size: 0.85rem; letter-spacing: 0.05em; text-transform: uppercase;">
-              Core Projects & Responsibilities</h4>
-            <ul class="timeline-points">
-              <li><strong>Home Page Revamp (Check-in, Profile, Cabin Club)</strong> – UI validation & regression
-                testing.</li>
-              <li><strong>Payment Revamp</strong> – Multipax pricing validation, session expiry, EMD insurance
-                validation.</li>
-              <li><strong>Check-in Revamp</strong> – PNR validation, boarding pass display, booking synchronization.
-              </li>
-              <li><strong>Booking List & Detail</strong> – Status validation, cancel notes DB check, fare breakdown
-                accuracy.</li>
-              <li><strong>Undian (Semboor)</strong> – User & Admin dashboard validation including duplicate prevention.
-              </li>
-              <li><strong>Tukar Point & Earn Cabin Point</strong> – Loyalty logic validation & backend reconciliation.
-              </li>
-              <li><strong>Pre Book Meals & Add-ons (Meals, Insurance, Merchandise)</strong> – Revenue feature validation
-                & total recalculation testing.</li>
-              <li><strong>Price Monitoring & OTA Comparison</strong> – Route-based price comparison, tax validation,
-                anomaly detection.</li>
-            </ul>
-
-            <h4
-              style="margin: 1.5rem 0 0.5rem; color: var(--accent-cyan); font-size: 0.85rem; letter-spacing: 0.05em; text-transform: uppercase;">
-              Data & Automation Experience</h4>
-            <ul class="timeline-points">
-              <li>SQL analysis using BigQuery (timestamp filtering, aggregation, platform comparison).</li>
-              <li>Backend vs UI price reconciliation.</li>
-              <li>Monitoring OTA scraper data per hour.</li>
-              <li>Google Cloud VM setup & cron scheduling (UTC conversion).</li>
-              <li>SSH, rsync deployment & API server health check.</li>
-            </ul>
-
-            <h4
-              style="margin: 1.5rem 0 0.5rem; color: var(--accent-cyan); font-size: 0.85rem; letter-spacing: 0.05em; text-transform: uppercase;">
-              Technical Skills</h4>
-            <ul class="timeline-points">
-              <li>Functional, Regression & Integration Testing.</li>
-              <li>End-to-End Booking Flow Testing.</li>
-              <li>SQL (BigQuery).</li>
-              <li>Google Cloud VM, SSH, SCP, Cron.</li>
-              <li>Android and ios testing environment.</li>
-            </ul>
-            <div class="timeline-tags">
-              <span class="ptag">E2E Testing</span>
-              <span class="ptag">SQL</span>
-              <span class="ptag">BigQuery</span>
-              <span class="ptag">GCP</span>
-              <span class="ptag">Pricing Investigation</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Troben -->
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <div class="timeline-header">
-              <div>
-                <h3 class="timeline-role">Quality Assurance Intern</h3>
-                <p class="timeline-company">
-                  <span class="company-name">Troben</span>
-                </p>
-                <p class="timeline-location">📍 Jakarta Timur</p>
-              </div>
-              <span class="timeline-period">Jul 2024 – Oct 2024</span>
-            </div>
-            <ul class="timeline-points">
-              <li>Test case design & coverage strategy</li>
-              <li>Collaboration with Product & Engineering team</li>
-              <li>Ownership of assigned testing domains</li>
-            </ul>
-            <div class="timeline-tags">
-              <span class="ptag">Test Case Design</span>
-              <span class="ptag">QA Strategy</span>
-              <span class="ptag">Agile Collaboration</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Harita Nickel -->
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <div class="timeline-header">
-              <div>
-                <h3 class="timeline-role">Internship HR-Support & Requirements</h3>
-                <p class="timeline-company">
-                  <span class="company-name">Harita Nickel</span>
-                  <span class="company-dot">·</span> BU PT. Halmahera Persada Lygend (HPAL)
-                </p>
-                <p class="timeline-location">📍 Jakarta Pusat</p>
-              </div>
-              <span class="timeline-period">Jun 2024 – Jul 2024</span>
-            </div>
-            <ul class="timeline-points">
-              <li>Personnel administration & employee data management</li>
-              <li>HR documentation & policy communication support</li>
-            </ul>
-            <div class="timeline-tags">
-              <span class="ptag">Administration</span>
-              <span class="ptag">Data Management</span>
-              <span class="ptag">Documentation</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Diskominfo -->
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <div class="timeline-header">
-              <div>
-                <h3 class="timeline-role">Internship</h3>
-                <p class="timeline-company">
-                  <span class="company-name">Dinas Komunikasi Informatika dan Statistika</span>
-                  <span class="company-dot">·</span> Provinsi Lampung
-                </p>
-                <p class="timeline-location">📍 Bandar Lampung</p>
-              </div>
-              <span class="timeline-period">Jul 2022 – Aug 2022</span>
-            </div>
-            <ul class="timeline-points">
-              <li>Requirement documentation & UML design</li>
-              <li>UI design & system testing (SIKAMTIK & SIMAS)</li>
-              <li>Linux & Ethical Hacking training</li>
-            </ul>
-            <div class="timeline-tags">
-              <span class="ptag">UML</span>
-              <span class="ptag">UI Design</span>
-              <span class="ptag">System Testing</span>
-              <span class="ptag">Linux</span>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Projects/Focus Area Section -->
-  <section class="section section-dark" id="projects">
-    <div class="container">
-      <div class="section-header">
-        <h2 class="section-title">Focus Areas & Highlights</h2>
-      </div>
-      <div class="projects-grid">
-
-        <div class="project-card featured">
-          <div class="project-header">
-            <div class="project-icon">✈️</div>
-            <span class="project-year">Core Expertise</span>
-          </div>
-          <h3 class="project-title">Flight Booking & Payment QA</h3>
-          <p class="project-desc">
-            Extensive experience in validating end-to-end flight booking scenarios: from searching flights, validating
-            multi-passenger (multipax) pricing dynamically, managing session expiries, up to successful ticket issuance.
-            Highly critical payment module validation.
-          </p>
-          <div class="project-tags">
-            <span class="ptag">E2E Flow</span>
-            <span class="ptag">Multipax Pricing</span>
-            <span class="ptag">Payment Validation</span>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-header">
-            <div class="project-icon">�</div>
-            <span class="project-year">Data-Driven</span>
-          </div>
-          <h3 class="project-title">Pricing & Anomaly Investigation</h3>
-          <p class="project-desc">
-            Proactive monitoring of OTA prices, identifying pricing anomalies, and cross-checking UI outputs directly
-            against backend logic to ensure 100% accurate financial reconciliation using BigQuery.
-          </p>
-          <div class="project-tags">
-            <span class="ptag">SQL</span>
-            <span class="ptag">BigQuery</span>
-            <span class="ptag">OTA Monitoring</span>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-header">
-            <div class="project-icon">⚙️</div>
-            <span class="project-year">DevOps/Cloud</span>
-          </div>
-          <h3 class="project-title">Cloud Resource & Automation</h3>
-          <p class="project-desc">
-            Comfortable deploying scripts and validation tools via SSH and rsync on Google Cloud VMs. Implementing and
-            managing cron scheduling to automate data operations.
-          </p>
-          <div class="project-tags">
-            <span class="ptag">GCP VM</span>
-            <span class="ptag">Cron Scheduling</span>
-            <span class="ptag">SSH & rsync</span>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section class="section" id="contact">
-    <div class="container">
-      <div class="section-header">
-        <h2 class="section-title">Get In Touch</h2>
-      </div>
-      <div class="contact-grid">
-        <div class="contact-text">
-          <p>
-            I am currently open to new opportunities in Quality Assurance. Feel free to reach out if you have any
-            questions or would like to collaborate!
-          </p>
-          <div class="contact-links">
-            <a href="mailto:helena@example.com" class="contact-link" id="contact-email">
-              <div class="contact-link-icon">📧</div>
-              <div>
-                <div class="contact-link-label">Email</div>
-                <div class="contact-link-value">simarmatahelena14@gmail.com</div>
-              </div>
-            </a>
-            <a href="https://linkedin.com/in/" class="contact-link" id="contact-linkedin" target="_blank"
-              rel="noopener">
-              <div class="contact-link-icon">💼</div>
-              <div>
-                <div class="contact-link-label">LinkedIn</div>
-                <div class="contact-link-value">Helena Yuniarta Simarmata</div>
-              </div>
-            </a>
-            <a href="https://wa.me/6281373605936" class="contact-link" id="contact-whatsapp" target="_blank"
-              rel="noopener">
-              <div class="contact-link-icon">💬</div>
-              <div>
-                <div class="contact-link-label">WhatsApp</div>
-                <div class="contact-link-value">+62 813-7360-5936</div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="contact-form-wrap">
-          <form class="contact-form" id="contactForm" action="https://formspree.io/f/mqeyzvlw" method="POST">
-            <div class="form-group">
-              <label for="name">Name</label>
-              <input type="text" id="name" name="name" placeholder="Your Name" required />
-            </div>
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" placeholder="email@example.com" required />
-            </div>
-            <div class="form-group">
-              <label for="message">Message</label>
-              <textarea id="message" name="message" rows="5" placeholder="Write your message here..."
-                required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary" id="submitBtn">
-              <span id="btnText">Send Message</span>
-            </button>
-          </form>
+      <div class="exp-detail-col">
+        <strong>Quality Assurance Intern</strong>
+        <ul class="notion-list">
+          <li>Test case design &amp; coverage strategy.</li>
+          <li>Collaboration with Product &amp; Engineering team.</li>
+          <li>Ownership of assigned testing domains.</li>
+        </ul>
+        <div class="tag-row flexible">
+          <span class="notion-tag">Test Case Design</span>
+          <span class="notion-tag">QA Strategy</span>
+          <span class="notion-tag">Agile Collaboration</span>
         </div>
       </div>
     </div>
-  </section>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-logo">
-          <div style="display: flex; flex-direction: column; align-items: center;">
-            <span style="line-height: 1.1;">Helena</span>
-            <span
-              style="font-size: 0.6rem; color: var(--accent-cyan); font-weight: 600; font-family: var(--font-sans); letter-spacing: 0.08em; text-transform: uppercase; margin-top: 2px;">Quality
-              Assurance</span>
-          </div>
+    <hr class="notion-divider" />
+
+    <!-- Experience 3: Harita Nickel -->
+    <div class="exp-row">
+      <div class="exp-date-col">
+        <strong>Harita Nickel</strong>
+        <span class="exp-date-text" style="font-size: 0.76rem;">BU PT. Halmahera Persada Lygend (HPAL)</span>
+        <span class="exp-date-text">Jun 2024 – Jul 2024</span>
+        <span class="exp-date-sub">📍 Jakarta Pusat</span>
+      </div>
+      <div class="exp-detail-col">
+        <strong>Internship HR-Support &amp; Requirements</strong>
+        <ul class="notion-list">
+          <li>Personnel administration &amp; employee data management.</li>
+          <li>HR documentation &amp; policy communication support.</li>
+        </ul>
+        <div class="tag-row flexible">
+          <span class="notion-tag">Administration</span>
+          <span class="notion-tag">Data Management</span>
+          <span class="notion-tag">Documentation</span>
         </div>
-        <div class="footer-text">© 2026 Helena. All rights reserved.</div>
-        <div class="footer-copy">&copy; 2026 Helena Yuniarta Simarmata. All rights reserved.</div>
       </div>
     </div>
-  </footer>
+
+    <hr class="notion-divider" />
+
+    <!-- Experience 4: Dinas Komunikasi -->
+    <div class="exp-row" style="margin-bottom: 40px;">
+      <div class="exp-date-col">
+        <strong>Dinas Komunikasi Informatika &amp; Statistika</strong>
+        <span class="exp-date-text" style="font-size: 0.76rem;">Provinsi Lampung</span>
+        <span class="exp-date-text">Jul 2022 – Aug 2022</span>
+        <span class="exp-date-sub">📍 Bandar Lampung</span>
+      </div>
+      <div class="exp-detail-col">
+        <strong>Internship</strong>
+        <ul class="notion-list">
+          <li>Requirement documentation &amp; UML design.</li>
+          <li>UI design &amp; system testing (SIKAMTIK &amp; SIMAS).</li>
+          <li>Linux &amp; Ethical Hacking training.</li>
+        </ul>
+        <div class="tag-row flexible">
+          <span class="notion-tag">UML</span>
+          <span class="notion-tag">UI Design</span>
+          <span class="notion-tag">System Testing</span>
+          <span class="notion-tag">Linux</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== FOCUS AREAS & HIGHLIGHTS ===== -->
+    <div class="section-header-notion">
+      <h3 class="section-h3">Focus Areas &amp; Highlights</h3>
+      <hr class="notion-divider" />
+    </div>
+
+    <div class="gallery-grid">
+      <div class="gallery-card featured-card">
+        <div class="gallery-card-top">
+          <span class="gallery-emoji">✈️</span>
+          <span class="gallery-badge">Core Expertise</span>
+        </div>
+        <h4 class="gallery-title">Flight Booking &amp; Payment QA</h4>
+        <p class="gallery-desc">Extensive experience in validating end-to-end flight booking scenarios: from searching
+          flights, validating multi-passenger (multipax) pricing dynamically, managing session expiries, up to
+          successful ticket issuance. Highly critical payment module validation.</p>
+        <div class="tag-row">
+          <span class="notion-tag">E2E Flow</span>
+          <span class="notion-tag">Multipax Pricing</span>
+          <span class="notion-tag">Payment Validation</span>
+        </div>
+      </div>
+
+      <div class="gallery-card">
+        <div class="gallery-card-top">
+          <span class="gallery-emoji">🔍</span>
+          <span class="gallery-badge">Data-Driven</span>
+        </div>
+        <h4 class="gallery-title">Pricing &amp; Anomaly Investigation</h4>
+        <p class="gallery-desc">Proactive monitoring of OTA prices, identifying pricing anomalies, and cross-checking UI
+          outputs directly against backend logic to ensure 100% accurate financial reconciliation using BigQuery.</p>
+        <div class="tag-row">
+          <span class="notion-tag">SQL</span>
+          <span class="notion-tag">BigQuery</span>
+          <span class="notion-tag">OTA Monitoring</span>
+        </div>
+      </div>
+
+      <div class="gallery-card">
+        <div class="gallery-card-top">
+          <span class="gallery-emoji">⚙️</span>
+          <span class="gallery-badge">DevOps/Cloud</span>
+        </div>
+        <h4 class="gallery-title">Cloud Resource &amp; Automation</h4>
+        <p class="gallery-desc">Comfortable deploying scripts and validation tools via SSH and rsync on Google Cloud
+          VMs. Implementing and managing cron scheduling to automate data operations.</p>
+        <div class="tag-row">
+          <span class="notion-tag">GCP VM</span>
+          <span class="notion-tag">Cron Scheduling</span>
+          <span class="notion-tag">SSH &amp; rsync</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== CONTACT ===== -->
+    <div class="section-header-notion" id="contact" style="margin-top: 48px;">
+      <h3 class="section-h3">Get In Touch</h3>
+      <hr class="notion-divider" />
+    </div>
+
+    <p class="contact-intro">
+      I am currently open to new opportunities in Quality Assurance. Feel free to reach out if you have any questions or
+      would like to collaborate!
+    </p>
+
+    <div class="contact-cards">
+      <a href="mailto:simarmatahelena14@gmail.com" class="contact-card">
+        <span class="contact-card-icon">📧</span>
+        <span class="contact-card-label">Email</span>
+        <span class="contact-card-val">simarmatahelena14@gmail.com</span>
+      </a>
+      <a href="https://linkedin.com/in/helena-yuniarta-simarmata" target="_blank" class="contact-card">
+        <span class="contact-card-icon">💼</span>
+        <span class="contact-card-label">LinkedIn</span>
+        <span class="contact-card-val">Helena Yuniarta Simarmata</span>
+      </a>
+      <a href="https://wa.me/6281373605936" target="_blank" class="contact-card">
+        <span class="contact-card-icon">💬</span>
+        <span class="contact-card-label">WhatsApp</span>
+        <span class="contact-card-val">+62 813-7360-5936</span>
+      </a>
+    </div>
+
+    <!-- Contact Form -->
+    <form class="contact-form" id="contactForm" onsubmit="handleSubmit(event)">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your Name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="email@example.com" required />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary" id="submitBtn">Send Message</button>
+      <p id="formMsg" class="form-msg"></p>
+    </form>
+
+    <!-- Footer -->
+    <div class="notion-footer">
+      <p><strong>Helena</strong> · Quality Assurance</p>
+      <p>© 2026 Helena Yuniarta Simarmata. All rights reserved.</p>
+    </div>
+
+  </div><!-- end page-wrapper -->
 
   <script src="app.js"></script>
 </body>
